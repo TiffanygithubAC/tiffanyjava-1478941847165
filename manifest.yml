@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: tiffanyjava
+  host: tiffanyjava
+  disk_quota: 1024M
+  services:
+  - Conversation-36
+  - Speech to Text-t4
+  - Text to Speech-at
